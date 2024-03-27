@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titlettext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="GestureGuide"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:paddingVertical="10dp"
+                app:srcCompat="@drawable/titlepic" />
+
+            <TextView
+                android:id="@+id/aboutus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Indian Sign Language (ISL) is a visual language used by the deaf community in India. It is a natural language with its own grammar, syntax, and vocabulary, and is not based on any spoken language. ISL has been developed and used by deaf people in India for many years. It is used in a variety of settings, including schools for the deaf, deaf clubs, and community gatherings. ISL uses hand gestures, facial expressions, and body language to convey meaning. Each gesture represents a word or concept, and can be combined with other gestures to form more complex ideas and sentences."
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:id="@+id/titlettext2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Alphabets"
+                android:paddingTop="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:paddingVertical="10dp"
+                app:srcCompat="@drawable/signsalphabets" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigator"
+        app:itemBackground="@color/tfe_color_primary"
+        app:itemTextColor="@drawable/serlector"
+        app:itemIconTint="@drawable/serlector"
+        app:menu="@menu/menu"
+        android:layout_alignParentBottom="true"
+
+        />
+
+
+</RelativeLayout>
+
+
